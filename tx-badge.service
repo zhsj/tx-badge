@@ -1,0 +1,9 @@
+[Unit]
+Description=tx-badge
+
+[Service]
+ExecStart=%h/go/bin/tx-badge --addr ADDR --key KEY
+Restart=always
+
+[Install]
+WantedBy=default.target
