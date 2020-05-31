@@ -81,7 +81,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	log.Println(r.Method, r.RequestURI, r.Proto, r.RemoteAddr, r.UserAgent())
 	ver := r.RequestURI[1:]
 	switch ver {
-	case "newest", "27", "35", "36", "37":
+	case "newest", "27", "35", "36", "37", "38":
 		break
 	default:
 		ver = "newest"
